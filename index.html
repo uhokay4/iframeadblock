@@ -1,0 +1,15 @@
+<html>
+  <head>i-frame ad-block</head>
+  <body style="margin: 0">
+    <iframe src="https://www.google.com", id="iframe", style="width: 100%; height: 100%;"></iframe>
+    <script>
+      document.onkeypress = function (e) {
+        if e.key == "Meta" {
+          let url = prompt("url?","https://www.google.com")
+          document.getElementById("iframe").setAttribute("src",url)
+        }
+        // use e.keyCode
+      };
+    </script>
+  </body>
+</html>
